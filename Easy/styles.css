@@ -3,58 +3,28 @@
   margin: 0;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 4fr;
-  /* grid-column-start: 1; */
-  grid-template-rows: repeat(13);
-  /* grid-row-start: 1; */
+table {
   padding: 0;
+  margin: 0;
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  position: static;
 }
 
-/* .wrapper > .stars{
-  background-color: white;
-  display: inline-block;
-  width: 600px;
-  height: 20px;
-} */
-
-.wrapper>.stars {
-  display: inline-block;
-  height: 441px;
-  width: auto;
-  grid-area: 1 / 1 / 8 / 2;
+img {
+  position: relative;
+  top: -637px;
 }
 
-.wrapper>.lines2 {
+td {
+  height: 49px;
+}
+
+tr {
+  height: 49px;
+}
+
+tr:nth-child(odd) {
   background-color: red;
-  display: inline-block;
-  width: 1920px;
-  height: 63px;
-  grid-column: 1/4;
-}
-
-.wrapper>.lines2:nth-child(odd) {
-  background-color: white;
-  display: inline-block;
-  width: 1920px;
-  height: 63px;
-  grid-column: 1/4;
-}
-
-
-.wrapper>.lines:nth-child(odd) {
-  background-color: white;
-  display: inline-block;
-  width: 1400px;
-  height: 63px;
-  grid-column: 2/4;
-}
-
-.wrapper>.lines {
-  background-color: red;
-  display: inline-block;
-  width: 1400px;
-  height: 63px;
-  grid-column: 2/4;
 }
